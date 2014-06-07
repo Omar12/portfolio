@@ -1,0 +1,22 @@
+// Colors
+$midnight-blue: #2c3e50;
+$evening-blue: #46719C;
+$midnight-gold: #9C7737;
+
+$bg-color: $midnight-blue;
+$text-color: #fff;
+$border-color: #fff;
+$gallery-bg: $evening-blue;
+$top-bar-bg: darken($midnight-blue, 5%);
+
+// Fonts
+$body-font: 'Adelle Sans', helvetica, arial, sans-serif;
+$heading-font: 'Brandon Grotesque', serif;
+
+// Media Query Sizes
+$break-medium: 40rem;
+$break-large: 64rem;
+
+// Easings
+$easeOutCirc: cubic-bezier(0.075, 0.82, 0.165, 1);
+$easeOutQuint: cubic-bezier(0.23, 1, 0.32, 1);

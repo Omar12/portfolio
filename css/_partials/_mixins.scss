@@ -1,0 +1,22 @@
+// CSS3 Prefixes
+@mixin css3($property, $parameters) {
+  #{$property}: #{$paramaters};
+}
+
+// Media Queries
+
+@mixin respond-to($media) {
+  @if $media == medium-screens {
+    @media only screen and (min-width: $break-medium) { @content; }
+  }
+  @else if $media == large-screens {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+}
+
+// .profile-pic {
+//   float: left;
+//   width: 250px;
+//   @include respond-to(medium-screens) { width: 125px; }
+//   @include respond-to(wide-screens) { float: none; }
+// }

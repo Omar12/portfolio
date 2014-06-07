@@ -1,0 +1,12 @@
+{
+  "name": "omartinez-portfolio",
+  "version": "0.0.0",
+  "authors": [
+    "Omar Martinez <this.is.omartinez@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "jquery": "~2.1.1"
+  }
+}

@@ -1,0 +1,68 @@
+.showcase {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  li {
+    height: 250px;
+    background: $gallery-bg;
+    position: relative;
+    padding: 0;
+    background-image: url(http://placehold.it/400x400);
+    background-position: center center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    transition: all 500ms $easeOutQuint;
+  }
+
+  .project--meta {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: .5rem;
+
+    small {
+      font-weight: 200;
+    }
+
+    h3 {
+      margin: 0;
+      font-weight: 200;
+    }
+  }
+
+  .preview--hover {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    display: table;
+    width: 90%;
+    height: 90%;
+    opacity: 0;
+    background: rgba(#111, .5);
+    -webkit-transform: scale(.85);
+            transform: scale(.85);
+    transition: all 500ms $easeOutCirc 50ms;
+
+    a {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 700;
+    }
+  }
+
+  .hovered {
+    background-position: center 40%;
+
+    .preview--hover {
+      opacity: 1;
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+}

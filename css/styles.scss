@@ -1,0 +1,26 @@
+@import "_partials/normalize";
+@import "variables";
+@import "_partials/mixins";
+@import "_partials/grid";
+@import "_partials/html";
+@import "_partials/loading";
+
+@import "_views/_grid-showcase";
+@import "_views/_project";
+
+.top--bar {
+  width: 100%;
+  padding: .25rem .5rem;
+  background-color: $top-bar-bg;
+  margin-bottom: 1rem;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-family: $heading-font;
+    font-weight: 200;
+    font-size: 1.25rem;
+    display: block;
+    text-align: right;
+  }
+}

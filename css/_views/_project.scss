@@ -1,0 +1,72 @@
+%margin-bottom {
+  margin-bottom: 1.6rem;
+}
+
+.project--title {}
+
+.project {
+  h2 {
+    margin: 0.83rem 0;
+  }
+}
+
+.project--hero {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 600px;
+  max-width: 100%;
+  background-image: url(http://placehold.it/800x600);
+  margin-bottom: 0.84rem;
+
+  &.scrolled {
+    max-height: 300px;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+}
+
+.project--information {
+  @extend %margin-bottom;
+
+  p {
+    padding: 0 2rem 0 0;
+  }
+}
+
+.project--specs {
+  @extend %margin-bottom;
+
+  p {
+    margin: 0;
+  }
+}
+
+.project--screens {
+  @extend %margin-bottom;
+
+  div {
+    -webkit-perspective: 1000;
+            perspective: 1000;
+  }
+
+  img {
+    -webkit-transform: rotateY(0) rotateX(0);
+            transform: rotateY(0) rotateX(0);
+    transition: all 2s $easeOutCirc 100ms;
+
+    &:hover {
+      -webkit-transform: rotateY(-10deg) rotateX(5deg);
+              transform: rotateY(-10deg) rotateX(5deg);
+    }
+  }
+}

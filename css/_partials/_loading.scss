@@ -1,0 +1,75 @@
+$initial-offset: -1rem;
+$animation-delay: 200ms !default;
+$animation-duration: 1 !default; // in seconds
+
+.preload-state {
+    -webkit-transform: translateY(#{$initial-offset});
+            transform: translateY(#{$initial-offset});
+    opacity: 0;
+}
+
+@mixin transition($property, $duration, $ease, $delay) {
+  $prefixes: webkit moz o;
+  @each $prefix in $prefixes {
+    -#{$prefix}-transition:  $property $duration $ease $delay;
+  }
+  transition: $property $duration $ease $delay;
+}
+
+
+// preload states
+body.preload {
+
+  h1, h2,
+  .client--name
+   {
+    @extend .preload-state;
+  }
+
+  $max: 10;
+  @for $i from 1 through $max {
+    .showcase {
+      li:nth-child(#{$i}) {
+        @extend .preload-state;
+      }
+    }
+  }
+
+  .project--hero {
+    opacity: 0;
+  }
+
+}
+
+
+
+// loaded states
+
+// homepage
+h1 {
+  @include transition(all, #{$animation-duration}s, $easeOutQuint, #{$animation-delay*1});
+}
+
+h2 {
+  @include transition(all, #{$animation-duration}s, $easeOutQuint, #{$animation-delay*2});
+}
+
+$max: 10;
+@for $i from 1 through $max {
+  .showcase {
+    li:nth-child(#{$i}) {
+      @extend .load-state;
+      @include transition(all, #{$animation-duration}s, $easeOutQuint, #{$i * 75}ms);
+    }
+  }
+}
+
+// project view
+
+.client--name {
+  @include transition(all, #{$animation-duration}s, $easeOutQuint, 0);
+}
+
+.project--hero {
+  @include transition(all, #{$animation-duration * 2.5}s, $easeOutQuint, #{$animation-delay*3});
+}
