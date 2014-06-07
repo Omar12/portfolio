@@ -6,7 +6,7 @@ Portfolio = {
       this.landing();
     }
 
-    if($('.project-page').length) {
+    if($('.project').length) {
       this.project();
     }
   },

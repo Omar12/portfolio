@@ -1,6 +1,10 @@
+- var project = {name: 'balloon', screen_num: 7}
+- var tech_specs = ["One", "Two", "Three"]
+
 div.top--bar
   a(href="/") Omar Martinez
 
+div.project.project_name
 span.client--name Client Name
 h1.project--title Project Name
 div.project--hero
@@ -12,18 +16,17 @@ div.container.project
       p Front-End Developer
       h3 Technical Specs
       ul
-        li Items here
+        each spec in tech_specs
+          li #{spec}
     div.project--information.column.two-thirds
       p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 
   h2 Project Images
   div.project--screens.row
-    div.column.half
-      a(href="http://i.imgur.com/m1Wg9Vt.jpg").swipebox
-        img(src="http://placehold.it/400x400")
-    div.column.half
-      a(href="http://ppcdn.500px.org/72802983/c41a887d62495f3dc9238ca3f0260c4a277c9b85/5.jpg").swipebox
-        img(src="http://placehold.it/400x400")
+      - for (var x = 1; x < project.screen_num+1; x++)
+        div.column.half
+          a(href="/img/projects/#{project.name}-0#{x}-full.jpg").swipebox
+            img(src="/img/projects/#{project.name}-0#{x}-thumb.jpg")
 
   h2 Project Code Sample
   div.project--code.row
@@ -34,5 +37,3 @@ div.container.project
             width: 100%;
             height: 100%;
           }
-
-div.project-page

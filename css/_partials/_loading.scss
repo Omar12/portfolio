@@ -59,7 +59,7 @@ $max: 10;
   .showcase {
     li:nth-child(#{$i}) {
       @extend .load-state;
-      @include transition(all, #{$animation-duration}s, $easeOutQuint, #{$i * 75}ms);
+      @include transition(all, #{$animation-duration}s, $easeOutExpo, #{$i * 75}ms);
     }
   }
 }

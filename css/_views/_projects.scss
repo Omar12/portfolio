@@ -1,0 +1,26 @@
+// Template
+// landing
+// -- project_name
+// .showcase {
+//   .balloon {
+//     background-image: url('/img/projects/grid/project_name.jpg');
+//   }
+// }
+
+// .project.project_name {
+//   .project--hero {
+//     background-image: url('/img/projects/project_name-01-full.jpg');
+//   }
+// }
+
+.showcase {
+  .balloon {
+    background-image: url('/img/projects/grid/balloon.jpg');
+  }
+}
+
+.project.balloon {
+  .project--hero {
+    background-image: url('/img/projects/balloon-01-full.jpg');
+  }
+}
