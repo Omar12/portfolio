@@ -23,6 +23,7 @@ div.container.project
 
   h2 Project Images
   div.project--screens.row
+      //- make sure the images follow the same number format
       - for (var x = 1; x < project.screen_num+1; x++)
         div.column.half
           a(href="/img/projects/#{project.name}-0#{x}-full.jpg").swipebox

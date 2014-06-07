@@ -1,40 +1,14 @@
+//- Long ass line because no multi-lines bs
+- var projects = [{slug: 'balloon', name: 'Balloon Agency', client: 'FromSomebodyElse'}, {slug: 'airforce', name: 'US Air Force', client: 'AgencyTen'}]
+
 div.container.landing
   h1 Omar Martinez
   h2 Showcase
   ul.showcase
-    li.column.third.balloon
-      div.project--meta
-        small FromSomebodyElse
-        h3 Balloon Agency
-      div.preview--hover
-        a(href="projects/balloon.html") View Project
-    li.column.third.project-name
-      div.project--meta
-        small Client
-        h3 Project Name
-      div.preview--hover
-        a(href="projects/project_template.html") View Project
-    li.column.third.project-name
-      div.project--meta
-        small Client
-        h3 Project Name
-      div.preview--hover
-        a(href="projects/project_template.html") View Project
-    li.column.third.project-name
-      div.project--meta
-        small Client
-        h3 Project Name
-      div.preview--hover
-        a(href="projects/project_template.html") View Project
-    li.column.third.project-name
-      div.project--meta
-        small Client
-        h3 Project Name
-      div.preview--hover
-        a(href="projects/project_template.html") View Project
-    li.column.third.project-name
-      div.project--meta
-        small Client
-        h3 Project Name
-      div.preview--hover
-        a(href="projects/project_template.html") View Project
+    each project in projects
+      li.column.third(class="#{project.slug}")
+        div.project--meta
+          small #{project.client}
+          h3 #{project.name}
+        div.preview--hover
+          a(href="projects/#{project.slug}.html") View Project

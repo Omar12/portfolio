@@ -20,10 +20,12 @@ div.project.balloon
             li #{spec}
 
       div.project--information.column.two-thirds
-        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        p The latest project that I have worked on. Balloon Agency is a project done with the company called From Somebody Else. Balloon (as we refer to it) is a website for a talent agency in NYC. Their talent consists of the people behind the scenes: the makeup artists, wardrobe experts, photographers, nutritionists and more. The target demographic is production companies looking for BTS talent.
+        p The goal for the site is help promote these artists work by describing a bit about themselves, display their social streams and to showcase a sample of their work. The work can be a photographic collection or a video demo reel.
 
     h2 Project Images
     div.project--screens.row
+      //- make sure the images follow the same number format
       - for (var x = 1; x < project.screen_num+1; x++)
         div.column.half
           a(href="/img/projects/#{project.name}-0#{x}-full.jpg").swipebox

@@ -1,26 +1,17 @@
-// Template
-// landing
-// -- project_name
-// .showcase {
-//   .balloon {
-//     background-image: url('/img/projects/grid/project_name.jpg');
-//   }
-// }
+// Images for each client
 
-// .project.project_name {
-//   .project--hero {
-//     background-image: url('/img/projects/project_name-01-full.jpg');
-//   }
-// }
-
-.showcase {
-  .balloon {
-    background-image: url('/img/projects/grid/balloon.jpg');
+// loop that cycle clients
+// $clients is in _variables.scss
+@each $client in $clients {
+  .showcase {
+    .#{$client} {
+      background-image: url('/img/projects/#{$client}-01-thumb.jpg');
+    }
   }
-}
 
-.project.balloon {
-  .project--hero {
-    background-image: url('/img/projects/balloon-01-full.jpg');
+  .project.#{$client} {
+    .project--hero {
+      background-image: url('/img/projects/#{$client}-01-full.jpg');
+    }
   }
 }

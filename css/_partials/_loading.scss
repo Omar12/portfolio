@@ -8,14 +8,6 @@ $animation-duration: 1 !default; // in seconds
     opacity: 0;
 }
 
-@mixin transition($property, $duration, $ease, $delay) {
-  $prefixes: webkit moz o;
-  @each $prefix in $prefixes {
-    -#{$prefix}-transition:  $property $duration $ease $delay;
-  }
-  transition: $property $duration $ease $delay;
-}
-
 
 // preload states
 body.preload {
@@ -26,7 +18,7 @@ body.preload {
     @extend .preload-state;
   }
 
-  $max: 10;
+  $max: 8;
   @for $i from 1 through $max {
     .showcase {
       li:nth-child(#{$i}) {
