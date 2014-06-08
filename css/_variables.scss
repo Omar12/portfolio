@@ -1,16 +1,19 @@
 // Portfolio
-$clients: balloon airforce;
+$clients: balloon laudi_vidni suncentral airforce imgame;
 
 // Colors
 $midnight-blue: #2c3e50;
 $evening-blue: #46719C;
 $midnight-gold: #9C7737;
+$flavor-orange: #e15e32;
 
 $bg-color: $midnight-blue;
 $text-color: #fff;
 $border-color: #fff;
 $gallery-bg: $evening-blue;
 $top-bar-bg: darken($midnight-blue, 5%);
+$highlight-color: $flavor-orange;
+$shadow-color: $midnight-blue;
 
 // Fonts
 $body-font: 'Adelle Sans', helvetica, arial, sans-serif;

@@ -45,7 +45,13 @@
 .project--specs {
   @extend %margin-bottom;
 
+  ul {
+    padding-left: .66rem;
+    list-style-type: disc;
+  }
+
   p {
+    padding-left: .66rem;
     margin: 0;
   }
 }

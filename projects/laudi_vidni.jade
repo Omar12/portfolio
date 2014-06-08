@@ -1,0 +1,80 @@
+- var project = {name: 'laudi_vidni', screen_num: 6}
+- var tech_specs = ["LESS", "Laravel (PHP)", "JS Templating"]
+
+div.top--bar
+  a(href="/") Omar Martinez
+
+div.project(class="#{project.name}")
+  span.client--name FromSomebodyElse
+  h1.project--title Laudi Vidni
+  div.project--hero
+  div.container.project
+    h2 Project Info
+    div.row
+      div.project--specs.column.quarter
+        h3 Roles
+        p Front-End Developer
+        h3 Technical Specs
+        ul
+          each spec in tech_specs
+            li #{spec}
+      div.project--information.column.two-thirds
+        p Laudi Vidni is an eCommerce site that you can customize purses and buy your creation. They are the first client that From Somebody Else acquired. The site encourages creativity and uniqueness by the creation of custom purses. The site features an engine to put together an almost infinite amount of combinations of materials and styles for many purses. Salespeople at their brick and mortar store use the website in their tablets to help customers customize and purchase their product. My involvement was in the product redesign build, checkout process and homepage redesign.
+        p The previous process was displayed on modal windows over the purse creator. We designed it to be a long and continuous experience from the moment you select the type of purse, until you confirm your purchase. We ensured the site worked and displayed properly on desktops and tablet devices.
+
+    h2 Project Images
+    div.project--screens.row
+        //- make sure the images follow the same number format
+        - for (var x = 1; x < project.screen_num+1; x++)
+          div.column.half
+            a(href="/img/projects/#{project.name}-0#{x}-full.jpg").swipebox
+              img(src="/img/projects/#{project.name}-0#{x}-thumb.jpg")
+
+    h2 Project Code Sample
+    div.project--code.row
+      div.column.full
+        h4 Gulp File
+        pre
+          code.language-javascript.
+            gulp.task('watch', function() {
+                var server = livereload();
+
+                //styles
+                gulp.watch(paths.less + '/**/*.less', ['styles']);
+
+                //scripts
+                gulp.watch(paths.js.src + '/**/*.js', ['build-design'])
+
+                //livereload
+                gulp.watch([
+                    paths.root + 'bin/app/views/**/*.php',
+                    paths.build.scripts + '/**/*.js',
+                    paths.build.styles + '/**/*.css'
+                ])
+                .on('change', function(file) {
+                    server.changed(file.path);
+                });
+            });
+
+        h4 homepage.less (snippet)
+        pre
+          code.language-css.
+            // DESIGN ADVICE & MUCH MORE
+            // -------------------------
+            .design_advice_more {
+
+              section {
+                .cover_image();
+                background-image: url('/static/images/home/advice_background.jpg');
+                padding-bottom: 0;
+                background-position: bottom left;
+              }
+
+              .copy_area {
+                float: right;
+
+                p {
+                  margin-bottom: 50px;
+                }
+              }
+            }
