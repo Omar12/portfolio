@@ -1,0 +1,37 @@
+- var project = {name: 'imgame', screen_num: 4}
+- var tech_specs = ["iOS", "Mobile", "JavaScript"]
+
+div.top--bar
+  a(href="/") Omar Martinez
+
+div.project(class="#{project.name}")
+  span.client--name Partner Project
+  h1.project--title ImGame
+  div.project--hero
+  div.container.project
+    h2 Project Info
+    a(class="project-link", href="http://imga.me")
+      span View Project
+    div.row
+      div.project--specs.column.quarter
+        h3 Roles
+        p Front-End Developer/Consultant
+        h3 Technical Specs
+        ul
+          each spec in tech_specs
+            li #{spec}
+      div.project--information.column.two-thirds
+        p ImGame is a check-in app for video games. My involvement with ImGame was focused on consulting design based on my knowledge of the demographic that we were targeting and the web experience part of the app. This meant, creating the checkin page template used for when the ImGame app user checked in to a game. I built their hype or preview pages for the app.
+        p It was created when Nike and others started using the scroll as the control of storytelling. We created a scrollbar animation scrobbler, that triggered a second animation after a certain point.
+        p More websites used what we built as inspiration and create their own scroll image sequencer, thus building upon a foundation of scroll storytelling.
+
+    h2 Project Images
+    div.project--screens.row
+      div.column.half
+        a(href="https://www.youtube.com/watch?v=A_s81uI-MKg").swipebox
+          img(src="/img/projects/#{project.name}-01-thumb.jpg")
+      //- make sure the images follow the same number format
+      - for (var x = 2; x < project.screen_num+1; x++)
+        div.column.half
+          a(href="/img/projects/#{project.name}-0#{x}-full.jpg").swipebox
+            img(src="/img/projects/#{project.name}-0#{x}-thumb.jpg")
