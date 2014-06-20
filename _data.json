@@ -1,0 +1,32 @@
+[
+    {
+        "slug": "balloon",
+        "name": "Balloon Agency",
+        "client": "FromSomebodyElse"
+    },
+    {
+        "slug": "laudi_vidni",
+        "name": "Laudi Vidni",
+        "client": "FromSomebodyElse"
+    },
+    {
+        "slug": "suncentral",
+        "name": "Sun Central",
+        "client": "AgencyTEN"
+    },
+    {
+        "slug": "airforce",
+        "name": "US Air Force",
+        "client": "AgencyTEN"
+    },
+    {
+        "slug": "imgame",
+        "name": "ImGame",
+        "client": "Partner Project"
+    },
+    {
+        "slug": "anidea",
+        "name": "AnIdea.com",
+        "client": "AgencyNet"
+    }
+]

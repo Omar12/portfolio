@@ -1,11 +1,8 @@
-//- Long line because Jade Says so
-- var projects = [{slug: 'balloon', name: 'Balloon Agency', client: 'FromSomebodyElse'}, {slug: 'laudi_vidni', name: 'Laudi Vidni', client: 'FromSomebodyElse'}, {slug: 'suncentral', name: 'Sun Central', client: 'AgencyTEN'}, {slug: 'airforce', name: 'US Air Force', client: 'AgencyTEN'}, {slug: 'imgame', name: 'ImGame', client: 'Partner Project'}, {slug: 'anidea', name: 'AnIdea.com', client: 'AgencyNet'}]
-
 div.container.landing
   h1 Omar Martinez
   h2 Showcase
   ul.showcase
-    each project in projects
+    for project in public._data
       li.column.third(class="#{project.slug}")
         div.project--meta
           small #{project.client}

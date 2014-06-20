@@ -50,7 +50,7 @@ $max: 10;
 @for $i from 1 through $max {
   .showcase {
     li:nth-child(#{$i}) {
-      @extend .load-state;
+      // @extend .load-state;
       @include transition(all, #{$animation-duration}s, $easeOutExpo, #{$i * 75}ms);
     }
   }

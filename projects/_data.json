@@ -1,0 +1,70 @@
+{
+  "airforce": {
+    "slug": "airforce",
+    "client_name": "AgencyNet/GDSM",
+    "project_name": "US AirForce Mobile",
+    "project_link": "http://m.airforce.com",
+    "project_roles": "Front-End Developer",
+    "project_specs": ["Mobile Web","PyroCMS","jQuery"],
+    "screen_num": 4,
+    "project_outcome": "We kept the file size small. Homepage weight is 430kb with 30 server calls. Probably it can be reduced to 20 server calls today."
+  },
+  "anidea": {
+    "slug": "anidea",
+    "client_name": "AgencyNet",
+    "project_name": "ANidea",
+    "project_roles": "Front-End Developer/ WordPress Developer",
+    "project_specs": ["WordPress", "jQuery", "Theme Development"],
+    "screen_num": 2,
+    "project_description": "AnIdea.com was the blog destination for AgencyNet. It was built using WordPress. We pushed the out of the box capabilities of WordPress to deliver content in a creative manner.",
+    "project_outcome": "We showcased the creativity of the designers by letting designers create blog skins that were chosen by the visitor. We increased the amount of views for AgencyNet."
+    },
+  "balloon": {
+    "slug": "balloon",
+    "client_name": "FromSomebodyElse",
+    "project_name": "Balloon Agency",
+    "project_roles": "Front-End Developer",
+    "project_specs": ["LESS", "Laravel(PHP)", "Responsive"],
+    "screen_num": 7,
+    "project_description": "Balloon Agency is my most recent project.  Balloon services clients looking for behind-the-scenes talent: makeup artists, wardrobe experts, photographers, nutritionists etc.  We are predominantly targeting production companies, but we also have the parallel goal of promoting BTS artists and technicians by providing a space to share and showcase their work.  A Balloon profile allows for a short autobiography, Instagram feed, a small sample of their work via images or video."
+    },
+  "dialogo": {
+    "slug": "dialogo",
+    "client_name": "Dialogo",
+    "project_name": "Articulation Assistant",
+    "project_roles": "Front-End Developer, UX Designer, iOS",
+    "project_specs": ["SASS", "JavaScript", "Phonegap", "iOS"],
+    "screen_num": 6,
+    "project_description": "Dialogo is a proprietary company that my wife and I started. She is a speech-language pathologist or SLP, and the focus of our company is to create interactive tools for Speech Therapists to use with their clients."
+    },
+  "imgame": {
+    "slug": "imgame",
+    "client_name": "Partner Project",
+    "project_name": "IMGame",
+    "project_link": "http://imga.me",
+    "project_roles": "Front-End Developer/Consultant",
+    "project_specs": ["iOS", "Mobile", "JavaScript"],
+    "screen_num": 4
+    },
+  "laudi_vidni": {
+    "slug": "laudi_vidni",
+    "client_name": "FromSomebodyElse",
+    "project_name": "Laudi Vidni",
+    "project_link": "http://shoplaudividni.com",
+    "project_roles": "Front-End Developer",
+    "project_specs": ["LESS", "Laravel (PHP)", "JS Templating"],
+    "screen_num": 6,
+    "project_description": "Laudi Vidni is an eCommerce site that allows customers to create and customize their own high-end leather purses.  We wanted to communicate luxury and creativity through making the customer feel like a designer.  We did this through creating an inspiring seamless frustration free process from start to finish. The site features an engine which can create limitless combinations of styles, materials and colors, and also provides ample inspiration through a series of pre-designed bags, that are also customizable.  Salespeople at the brick and mortar store access the site on tablets to help customers visualize and create their product."
+    },
+  "project_template": {
+    "slug": "",
+    "client_name": "",
+    "project_name": "",
+    "project_link": "",
+    "project_roles": "",
+    "project_specs": [],
+    "screen_num": 1,
+    "project_description": "",
+    "project_outcome": ""
+  }
+}
