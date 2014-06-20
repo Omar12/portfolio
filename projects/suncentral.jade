@@ -1,31 +1,41 @@
-- var project = {name: 'suncentral'}
-- var tech_specs = ["Facebook Tab", "Twitter", "Instagram", "Grunt", "SCSS", "CSS3 Animations"]
+//- do not insert any project data on this document.
+//- only project code (crap)
+//- all the data is coming from projects/_data.json
 
 div.top--bar
   a(href="/") Omar Martinez
 
-div.project(class="#{project.name}")
-  span.client--name AgencyTen
-  h1.project--title Sun Central
+div.project(class="#{slug}")
+  span.client--name #{client_name}
+  h1.project--title #{project_name}
   div.project--hero
   div.container.project
     h2 Project Info
-    a(class="project-link", href="https://www.facebook.com/SolarGard/app_238961039593650")
-      span View Project
+    if project_link
+      a(class="project-link", href="#{project_link}")
+        span View Project
     div.row
       div.project--specs.column.quarter
         h3 Roles
-        p Front-End Developer
+        p #{project_roles}
+
         h3 Technical Specs
         ul
-          each spec in tech_specs
+          each spec in project_specs
             li #{spec}
       div.project--information.column.two-thirds
-        p SunCentral is a sun fact dashboard created for SolarGard, a company that provides solar protection for household windows.  The goal of the site was to “keep the fun in sun.”  We needed to make a relatively uninteresting product and brand, more social and fun.  This was achieved through use of the dashboard that presented quirky, fun, entertaining facts, about the sun and sun protection.  Art direction, playful animations and copywriting were used to achieve this goal.  Animations were CSS transitions triggered with JavaScript, which allowed us to control the timing of the animations.
-        p The designers and I, brainstormed on the individual animations. The animations were CSS Transitions triggered with JavaScript. This allowed to control the timing of the animations.
+        if project_description
+          h3 Description
+          p #{project_description}
+
+        if project_outcome
+          h3 Outcome
+          p #{project_outcome}
 
     h2 Project Images
     div.project--screens.row
-      div.column.half
-        a(href="https://www.youtube.com/watch?v=9PLyGpIJ8T8").swipebox
-          img(src="/img/projects/#{project.name}-01-thumb.jpg")
+      //- make sure the images follow the same number format
+      - for (var x = 1; x < screen_num+1; x++)
+        div.column.half
+          a(href="https://www.youtube.com/watch?v=9PLyGpIJ8T8").swipebox
+            img(src="/img/projects/#{slug}-0#{x}-thumb.jpg")

@@ -56,6 +56,16 @@
     "screen_num": 6,
     "project_description": "Laudi Vidni is an eCommerce site that allows customers to create and customize their own high-end leather purses.  We wanted to communicate luxury and creativity through making the customer feel like a designer.  We did this through creating an inspiring seamless frustration free process from start to finish. The site features an engine which can create limitless combinations of styles, materials and colors, and also provides ample inspiration through a series of pre-designed bags, that are also customizable.  Salespeople at the brick and mortar store access the site on tablets to help customers visualize and create their product."
     },
+  "suncentral": {
+    "slug": "suncentral",
+    "client_name": "AgencyTEN",
+    "project_name": "SolarGard SunCentral",
+    "project_link": "https://www.facebook.com/SolarGard/app_238961039593650",
+    "project_roles": "Front-End Developer",
+    "project_specs": ["Facebook Tab", "Twitter", "Instagram", "Grunt", "SCSS", "CSS3 Animations"],
+    "screen_num": 1,
+    "project_description": "SunCentral is a sun fact dashboard created for SolarGard, a company that provides solar protection for household windows.  The goal of the site was to “keep the fun in sun.”"
+  },
   "project_template": {
     "slug": "",
     "client_name": "",

@@ -1,13 +1,9 @@
-# Omar Martinez Portfolio
+# The Portfolio of Omar Martinez
 
 The portfolio runs on harp. To install harp run `npm install harp -g`.
 
-It uses Jade and SCSS.
+Built using Jade and SCSS.
 
-Start Server:
+Start Server: `harp server`
 
-`harp server`
-
-Compile Work:
-
-`harp compile`
+Compile Work: `harp compile`
