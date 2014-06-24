@@ -2,28 +2,38 @@
 $clients: balloon laudi_vidni suncentral airforce imgame anidea dialogo;
 
 // Colors
-$midnight-blue: #2c3e50;
-$evening-blue: #46719C;
-$midnight-gold: #9C7737;
-$flavor-orange: #e15e32;
+$white: #fff;
+$offblack: #111;
+$metallic-blue: #2e457d;
 
-$bg-color: $midnight-blue;
-$text-color: #fff;
-$border-color: #fff;
-$gallery-bg: $evening-blue;
-$top-bar-bg: darken($midnight-blue, 5%);
-$highlight-color: $flavor-orange;
-$shadow-color: $midnight-blue;
-$button-bg: $evening-blue;
-$button-hover: $flavor-orange;
+// color assignments
+$bg-color: $white;
+$text-color: $offblack;
+$border-color: $metallic-blue;
+$gallery-bg: $metallic-blue;
+$top-bar-bg: $metallic-blue;
+$highlight-color: darken($metallic-blue, 5%);
+$shadow-color: $metallic-blue;
+$button-bg: $metallic-blue;
+$button-hover: lighten($metallic-blue, 15%);
+$border-color: $metallic-blue;
+$menu-bg: $offblack;
 
 // Fonts
 $body-font: 'Adelle Sans', helvetica, arial, sans-serif;
 $heading-font: 'Brandon Grotesque', serif;
 
+// Measurements
+// -------------
+
 // Media Query Sizes
 $break-medium: 40rem;
 $break-large: 64rem;
+
+// Widths
+$nav-width: 15rem;
+$burger-dim: 3rem;
+$burger-bun: 0.5rem;
 
 // Easings
 $easeOutCirc: cubic-bezier(0.075, 0.82, 0.165, 1);

@@ -1,13 +1,17 @@
-@import "_partials/normalize";
 @import "variables";
+
+// Base Styles
+@import "_partials/normalize";
 @import "_partials/mixins";
 @import "_partials/grid";
 @import "_partials/html";
-@import "_partials/loading";
+@import "_partials/push-menu";
+// @import "_partials/loading";
 
-@import "_views/_grid-showcase";
-@import "_views/_project";
-@import "_views/_projects";
+// Views
+@import "_views/landing";
+@import "_views/project";
+@import "_views/resume";
 
 .top--bar {
   width: 100%;

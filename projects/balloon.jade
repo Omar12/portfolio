@@ -5,131 +5,131 @@
 div.top--bar
   a(href="/") Omar Martinez
 
-div.project(class="#{slug}")
+div.project.container
   span.client--name #{client_name}
   h1.project--title #{project_name}
-  div.project--hero
-  div.container.project
-    h2 Project Info
-    if project_link
-      a(class="project-link", href="#{project_link}")
-        span View Project
-    div.row
-      div.project--specs.column.quarter
-        h3 Roles
-        p #{project_roles}
+div.project--hero(class="#{slug}")
+div.container.project
+  h2 Project Info
+  if project_link
+    a(class="project-link", href="#{project_link}")
+      span View Project
+  div.row
+    div.project--specs.column.quarter
+      h3 Roles
+      p #{project_roles}
 
-        h3 Technical Specs
-        ul
-          each spec in project_specs
-            li #{spec}
-      div.project--information.column.two-thirds
-        if project_description
-          h3 Description
-          p #{project_description}
+      h3 Technical Specs
+      ul
+        each spec in project_specs
+          li #{spec}
+    div.project--information.column.two-thirds
+      if project_description
+        h3 Description
+        p #{project_description}
 
-        if project_outcome
-          h3 Outcome
-          p #{project_outcome}
+      if project_outcome
+        h3 Outcome
+        p #{project_outcome}
 
-    h2 Project Images
-    div.project--screens.row
-      //- make sure the images follow the same number format
-      - for (var x = 1; x < screen_num+1; x++)
-        div.column.half
-          a(href="/img/projects/#{slug}-0#{x}-full.jpg").swipebox
-            img(src="/img/projects/#{slug}-0#{x}-thumb.jpg")
+  h2 Project Images
+  div.project--screens.row
+    //- make sure the images follow the same number format
+    - for (var x = 1; x < screen_num+1; x++)
+      div.column.half
+        a(href="/img/projects/#{slug}-0#{x}-full.jpg").swipebox
+          img(src="/img/projects/#{slug}-0#{x}-thumb.jpg")
 
-    h2 Project Code Sample
-    div.project--code.row
-      div.column.full
-        h4 balloon.less (settings)
-        pre
-          code.language-css.
-            // Brand Colors
-            // ============
-            @COLOR_PURPLE_GRAY:   #413e46;
-            @COLOR_WELSH_PURPLE:  #9e1a71;
-
-
-            // Artist Colors
-            // =============
-            @ROSE_TRAN:             #ff3239; /* red */
-            @RAUL_GUERRERO:         #1c4a74; /* cobalt blue */
-            @ALEXANDRA_BROCK:       #f37b79; /* pink */
-            @LEE_MORGAN:            #87eb0f; /* brazil green */
-            @MADELEINE_HAMER:       #08c8cf; /* sky blue */
+  h2 Project Code Sample
+  div.project--code.row
+    div.column.full
+      h4 balloon.less (settings)
+      pre
+        code.language-css.
+          // Brand Colors
+          // ============
+          @COLOR_PURPLE_GRAY:   #413e46;
+          @COLOR_WELSH_PURPLE:  #9e1a71;
 
 
-            // File Paths
-            // ==========
-            @STATIC_FOLDER:     "/static";
-            @ASSETS_FOLDER:     "@{STATIC_FOLDER}/assets";
-            @IMAGES_FOLDER:     "@{STATIC_FOLDER}/images";
+          // Artist Colors
+          // =============
+          @ROSE_TRAN:             #ff3239; /* red */
+          @RAUL_GUERRERO:         #1c4a74; /* cobalt blue */
+          @ALEXANDRA_BROCK:       #f37b79; /* pink */
+          @LEE_MORGAN:            #87eb0f; /* brazil green */
+          @MADELEINE_HAMER:       #08c8cf; /* sky blue */
 
-        h4 artists_default_theme.less (mixin)
-        pre
-          code.language-css.
-            .artists-default-theme(@artistsColor, @artistsName) {
 
-            // Balloon Logo
-            // ============
-            div.menu-toggle-btn {
-              background: @artistsColor;
-            }
+          // File Paths
+          // ==========
+          @STATIC_FOLDER:     "/static";
+          @ASSETS_FOLDER:     "@{STATIC_FOLDER}/assets";
+          @IMAGES_FOLDER:     "@{STATIC_FOLDER}/images";
 
-            // Artist Detail Page
-            // ==================
-            .artist-cover {
-              background-image: url('@{ASSETS_FOLDER}/artists/@{artistsName}/@{artistsName}_cover.jpg');
+      h4 artists_default_theme.less (mixin)
+      pre
+        code.language-css.
+          .artists-default-theme(@artistsColor, @artistsName) {
 
-              h1 {
-                  color: @artistsColor;
-              }
-            }
+          // Balloon Logo
+          // ============
+          div.menu-toggle-btn {
+            background: @artistsColor;
+          }
 
-            .artist-profile {
+          // Artist Detail Page
+          // ==================
+          .artist-cover {
+            background-image: url('@{ASSETS_FOLDER}/artists/@{artistsName}/@{artistsName}_cover.jpg');
 
-              a.box-button {
-                color: #fff;
-                background-color: @artistsColor;
-              }
-            }
-
-            .social__links {
-
-              i {
-                &:hover {
-                  background-color: @artistsColor;
-                }
-              }
-            }
-
-            // Homepage - Featured Artist
-            // ==========================
-            &.featured-artist {
-
-              div.feaured-artist-profile-container  {
-                background-image:url('@{ASSETS_FOLDER}/home/artists/@{artistsName}_background.jpg');
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-              }
-
-              p.artist-name {
+            h1 {
                 color: @artistsColor;
-              }
+            }
+          }
 
-              a.box-button {
-                color: #fff;
+          .artist-profile {
+
+            a.box-button {
+              color: #fff;
+              background-color: @artistsColor;
+            }
+          }
+
+          .social__links {
+
+            i {
+              &:hover {
                 background-color: @artistsColor;
               }
             }
           }
 
-        h4 rose_tran.less
-        pre
-          code.language-css.
-            .rose_tran {
-              .artists-default-theme(@ROSE_TRAN, 'rose_tran');
+          // Homepage - Featured Artist
+          // ==========================
+          &.featured-artist {
+
+            div.feaured-artist-profile-container  {
+              background-image:url('@{ASSETS_FOLDER}/home/artists/@{artistsName}_background.jpg');
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
             }
+
+            p.artist-name {
+              color: @artistsColor;
+            }
+
+            a.box-button {
+              color: #fff;
+              background-color: @artistsColor;
+            }
+          }
+        }
+
+      h4 rose_tran.less
+      pre
+        code.language-css.
+          .rose_tran {
+            .artists-default-theme(@ROSE_TRAN, 'rose_tran');
+          }

@@ -1,0 +1,58 @@
+%nav-transition {
+  @include transition(all 0.5s $easeOutExpo);
+}
+
+.nav--trigger {
+  border: none;
+  background: #0f0;
+  color: #fff;
+  width: $burger-dim;
+  height: $burger-dim;
+  position: absolute;
+  top: 0;
+  right: -($burger-dim);
+
+  .nav--icon {
+    display: block;
+    position: relative;
+    padding-left: 1.25em;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.5em;
+      width: 1em;
+      height: 0.30em;
+      background: black;
+      box-shadow:
+        0 0.5em 0 0 black,
+        0 0 1em 0 0 black;
+    }
+  }
+
+}
+
+.push--nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $nav-width;
+  height: 100%;
+  background: $offblack;
+  color: $white;
+  z-index: 1000;
+  @include transform(translateX(-($nav-width)));
+  @extend %nav-transition;
+
+  &.open-nav {
+    @include transform(translateX(0));
+  }
+}
+
+.page-wrap {
+  @extend %nav-transition;
+  &.open-nav {
+    @include transform(translateX($nav-width));
+  }
+}

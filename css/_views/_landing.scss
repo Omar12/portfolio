@@ -1,3 +1,16 @@
+// Page Title
+
+h1 {
+  font-size: 4.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 2px solid $border-color;
+}
+
+
+// Grid Showcase
+// -------------
 .showcase {
   list-style-type: none;
   margin: 0;
@@ -13,7 +26,7 @@
     background-position: center center;
     -webkit-background-size: 125%;
             background-size: 125%;
-    transition: background-size 500ms $easeOutExpo; // doesn't work but whatevs
+    @include transition(background-size 500ms $easeOutExpo);
   }
 
   .project--meta {
@@ -48,9 +61,8 @@
     height: 90%;
     opacity: 0;
     background: rgba(#111, .5);
-    -webkit-transform: scale(.85);
-            transform: scale(.85);
-    transition: all 500ms $easeOutCirc 50ms;
+    @include transform(scale(.85));
+    @include transition(all 500ms $easeOutCirc 50ms);
 
     a {
       display: table-cell;
@@ -59,18 +71,17 @@
       text-transform: uppercase;
       text-decoration: none;
       color: #fff;
-      font-weight: 700;
+      font-weight: 200;
     }
   }
 
   .hovered {
-    -webkit-background-size: 115%;
-            background-size: 115%;
+    -webkit-background-size: 120%;
+            background-size: 120%;
 
     .preview--hover {
       opacity: 1;
-      -webkit-transform: scale(1);
-              transform: scale(1);
+      @include transform(scale(1));
     }
   }
 }

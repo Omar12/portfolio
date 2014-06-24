@@ -5,86 +5,86 @@
 div.top--bar
   a(href="/") Omar Martinez
 
-div.project(class="#{slug}")
+div.project.container
   span.client--name #{client_name}
   h1.project--title #{project_name}
-  div.project--hero
-  div.container.project
-    h2 Project Info
-    if project_link
-      a(class="project-link", href="#{project_link}")
-        span View Project
-    div.row
-      div.project--specs.column.quarter
-        h3 Roles
-        p #{project_roles}
+div.project--hero(class="#{slug}")
+div.container.project
+  h2 Project Info
+  if project_link
+    a(class="project-link", href="#{project_link}")
+      span View Project
+  div.row
+    div.project--specs.column.quarter
+      h3 Roles
+      p #{project_roles}
 
-        h3 Technical Specs
-        ul
-          each spec in project_specs
-            li #{spec}
-      div.project--information.column.two-thirds
-        if project_description
-          h3 Description
-          p #{project_description}
+      h3 Technical Specs
+      ul
+        each spec in project_specs
+          li #{spec}
+    div.project--information.column.two-thirds
+      if project_description
+        h3 Description
+        p #{project_description}
 
-        if project_outcome
-          h3 Outcome
-          p #{project_outcome}
+      if project_outcome
+        h3 Outcome
+        p #{project_outcome}
 
-    h2 Project Images
-    div.project--screens.row
-      //- make sure the images follow the same number format
-      - for (var x = 1; x < screen_num+1; x++)
-        div.column.half
-          a(href="/img/projects/#{slug}-0#{x}-full.jpg").swipebox
-            img(src="/img/projects/#{slug}-0#{x}-thumb.jpg")
+  h2 Project Images
+  div.project--screens.row
+    //- make sure the images follow the same number format
+    - for (var x = 1; x < screen_num+1; x++)
+      div.column.half
+        a(href="/img/projects/#{slug}-0#{x}-full.jpg").swipebox
+          img(src="/img/projects/#{slug}-0#{x}-thumb.jpg")
 
-    h2 Project Code Sample
-    div.project--code.row
-      div.column.full
-        h4 Gulp File
-        pre
-          code.language-javascript.
-            gulp.task('watch', function() {
-                var server = livereload();
+  h2 Project Code Sample
+  div.project--code.row
+    div.column.full
+      h4 Gulp File
+      pre
+        code.language-javascript.
+          gulp.task('watch', function() {
+              var server = livereload();
 
-                //styles
-                gulp.watch(paths.less + '/**/*.less', ['styles']);
+              //styles
+              gulp.watch(paths.less + '/**/*.less', ['styles']);
 
-                //scripts
-                gulp.watch(paths.js.src + '/**/*.js', ['build-design'])
+              //scripts
+              gulp.watch(paths.js.src + '/**/*.js', ['build-design'])
 
-                //livereload
-                gulp.watch([
-                    paths.root + 'bin/app/views/**/*.php',
-                    paths.build.scripts + '/**/*.js',
-                    paths.build.styles + '/**/*.css'
-                ])
-                .on('change', function(file) {
-                    server.changed(file.path);
-                });
-            });
+              //livereload
+              gulp.watch([
+                  paths.root + 'bin/app/views/**/*.php',
+                  paths.build.scripts + '/**/*.js',
+                  paths.build.styles + '/**/*.css'
+              ])
+              .on('change', function(file) {
+                  server.changed(file.path);
+              });
+          });
 
-        h4 homepage.less (snippet)
-        pre
-          code.language-css.
-            // DESIGN ADVICE & MUCH MORE
-            // -------------------------
-            .design_advice_more {
+      h4 homepage.less (snippet)
+      pre
+        code.language-css.
+          // DESIGN ADVICE & MUCH MORE
+          // -------------------------
+          .design_advice_more {
 
-              section {
-                .cover_image();
-                background-image: url('/static/images/home/advice_background.jpg');
-                padding-bottom: 0;
-                background-position: bottom left;
-              }
+            section {
+              .cover_image();
+              background-image: url('/static/images/home/advice_background.jpg');
+              padding-bottom: 0;
+              background-position: bottom left;
+            }
 
-              .copy_area {
-                float: right;
+            .copy_area {
+              float: right;
 
-                p {
-                  margin-bottom: 50px;
-                }
+              p {
+                margin-bottom: 50px;
               }
             }
+          }

@@ -1,6 +1,11 @@
 // CSS3 Prefixes
-@mixin css3($property, $parameters) {
-  #{$property}: #{$paramaters};
+// TODO: FIX
+@mixin css3($property, $parameters...) {
+  $prefixes: webkit moz o;
+  @each $prefix in $prefixes {
+    -#{prefix}-#{$property}: $paramaters;
+  }
+  #{$property}: $paramaters;
 }
 
 // Media Queries
@@ -22,10 +27,18 @@
 // }
 
 
-@mixin transition($property, $duration, $ease, $delay) {
+@mixin transition($values...) {
   $prefixes: webkit moz o;
   @each $prefix in $prefixes {
-    -#{$prefix}-transition:  $property $duration $ease $delay;
+    -#{$prefix}-transition: $values;
   }
-  transition: $property $duration $ease $delay;
+  transition: $values;
+}
+
+@mixin transform($values...) {
+  $prefixes: webkit moz o;
+  @each $prefix in $prefixes {
+    -#{$prefix}-transform: $values;
+  }
+  transform: $values;
 }

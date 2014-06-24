@@ -4,18 +4,13 @@ html
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
 
-    title The Portfolio of Omar Martinez
+    title The Resume of Omar Martinez
     link(rel="stylesheet" href="/css/fonts/font.css")
     link(rel="stylesheet" href="/css/styles.css")
-    link(rel="stylesheet" href="/bower_components/swipebox/src/css/swipebox.min.css")
-    link(rel="stylesheet" href="/css/prism.css")
-  body.preload
-    != partial('_partials/_nav')
 
-    .page-wrap
-        != yield
+  body.preload
+    != yield
 
     script(src='/bower_components/jquery/dist/jquery.min.js')
     script(src='/bower_components/swipebox/src/js/jquery.swipebox.min.js')
-    script(src='/scripts/plugins/prism.js')
     script(src='/scripts/main.js')
