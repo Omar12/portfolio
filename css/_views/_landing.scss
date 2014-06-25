@@ -1,11 +1,10 @@
 // Page Title
 
-h1 {
-  font-size: 4.4rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-align: center;
-  border-bottom: 2px solid $border-color;
+header {
+  h1 {
+    text-align: center;
+    border-bottom: 2px solid $border-color;
+  }
 }
 
 

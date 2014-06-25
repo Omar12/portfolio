@@ -1,41 +1,54 @@
 // Portfolio
+// -------------
 $clients: balloon laudi_vidni suncentral airforce imgame anidea dialogo;
 
 // Colors
-$white: #fff;
-$offblack: #111;
+// -------------
+$white:         #fff;
+$offblack:      #111;
 $metallic-blue: #2e457d;
 
 // color assignments
-$bg-color: $white;
-$text-color: $offblack;
-$border-color: $metallic-blue;
-$gallery-bg: $metallic-blue;
-$top-bar-bg: $metallic-blue;
+// -------------
+$bg-color:        $white;
+$text-color:      $offblack;
+$border-color:    $metallic-blue;
+$gallery-bg:      $metallic-blue;
+$top-bar-bg:      $metallic-blue;
 $highlight-color: darken($metallic-blue, 5%);
-$shadow-color: $metallic-blue;
-$button-bg: $metallic-blue;
-$button-hover: lighten($metallic-blue, 15%);
-$border-color: $metallic-blue;
-$menu-bg: $offblack;
+$shadow-color:    $metallic-blue;
+$button-bg:       $metallic-blue;
+$button-hover:    lighten($metallic-blue, 15%);
+$border-color:    $metallic-blue;
+$button-nav-bg:   $metallic-blue;
+$pull-nav-bg:     lighten($offblack, 15%);
+$pull-nav-hover:  $metallic-blue;
+$pull-nav-border: lighten($offblack, 25%);
+
+
 
 // Fonts
-$body-font: 'Adelle Sans', helvetica, arial, sans-serif;
+// -------------
+$body-font:    'Adelle Sans', helvetica, arial, sans-serif;
 $heading-font: 'Brandon Grotesque', serif;
+
+
 
 // Measurements
 // -------------
 
 // Media Query Sizes
 $break-medium: 40rem;
-$break-large: 64rem;
+$break-large:  64rem;
 
 // Widths
-$nav-width: 15rem;
-$burger-dim: 3rem;
-$burger-bun: 0.5rem;
+$pull-nav-width: 14rem;
+$burger-size:    3.25rem;
+$burger-height:  1.375rem;
+$bun-width:      2rem;
+$bun-height:     .3125rem;
 
 // Easings
-$easeOutCirc: cubic-bezier(0.075, 0.82, 0.165, 1);
-$easeOutQuint: cubic-bezier(0.23, 1, 0.32, 1);
-$easeOutExpo: cubic-bezier(0.19, 1, 0.22, 1);
+$easeOutCirc:   cubic-bezier(0.075, 0.82, 0.165, 1);
+$easeOutQuint:  cubic-bezier(0.23, 1, 0.32, 1);
+$easeOutExpo:   cubic-bezier(0.19, 1, 0.22, 1);

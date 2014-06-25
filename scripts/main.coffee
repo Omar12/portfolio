@@ -10,9 +10,12 @@ Portfolio =
   navigation: ->
     $(".nav--trigger").click(->
         $(this).parent().toggleClass "open-nav"
+        $(".nav--icon").toggleClass "open-nav"
         $(".page-wrap").toggleClass "open-nav"
         return
       )
+    workWidth = $(".work--nav li").width()
+    $(".work--nav li").height(workWidth)
 
   landing: ->
 
