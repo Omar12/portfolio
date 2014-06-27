@@ -11,31 +11,31 @@ this.is.omartinez@gmail.com
 
 * **From Somebody Else** *(January 2014 - Present)*
   * Front-End Developer
+    * Responsibilities
+      * Front-End Architecture of projects
 * **AgencyTEN (AgencyNET)** *(2006 - 2013)*
-  * Position: Lead Technologist (2012 - 2013)
+  * **Position: Lead Technologist** (2012 - 2013)
     * Responsibilities
       * Technical Consulting
-        * Provided clients with technical recommendations (Social, CMS, API's, Third Party Services) based on project goals and requirements.
-        * Established technical outlines and best practices for development.
+        * Established technical outlines and best practices for development, based on project goals and requirements.
       * Research and Development
-        * Researched and Development of latest web technologies.
-        * Led weekly internal meetings with developers to present findings on web technology.
-        * Edited daily tech newsletter.
+        * Led weekly internal meetings with developers to discuss research on web technologies.
+        * Editor of internal tech email newsletter.
       * Lead Developer
-        * Developed frameworks for web based projects and delegated development to team members.
-        * Established code architecture, documentation for developers and producers.
-        * Collaborated with team members of various disciplines, outlining technical limitations and expectations of projects.
+        * Collaborated with team members, outlining technical limitations and expectations of projects.
+        * Determined code architecture, Frameworks and documentation for developers and producers.
+        * Delegated development to team members.
     * Projects:
       * [KAEC CityQuest](http://www.cityquest.net/)
         * Roles:
-          * Technical Consulting - Recommended best practices, based on client needs and requirements.
-          * Wordpress Development - Structured content architecture along with system documentation.
+          * Technical Consulting
+          * Wordpress Development
       * AgencyTEN.com
         * Role:
-          *Lead Developer - Built the framework of the project. Developers assisted with build, based on the project framework.
+          *Lead Developer
     *Publications:
       * .NET Magazine - Should We Get Rid Of Social Media Buttons?
-  * Position: Senior Tech Lead (2011 - 2012)
+  * **Position: Senior Tech Lead** (2011 - 2012)
     * Responsibilities:
       * Mobile Web Development
       * Front-End Development
@@ -60,23 +60,22 @@ this.is.omartinez@gmail.com
     * Key Projects:
       * [Mobile AirForce.com](http://m.airforce.com)
         * Role: Lead Front-End Developer
-          * Built front-end framework of site on PyroCMS.
         * Recognitions:
           * [FWA Mobile Site Of The Day](http://www.thefwa.com/mobile/u-s-air-force-mobile-site-?p=agencynet) (Aug 10, 2011)
-  * Position: Front-End Developer/Producer (2009 - 2010)
+  * **Position: Front-End Developer/Producer** (2009 - 2010)
     * Responsibilities:
       * Client communication - Ongoing client communication on project status and requests.
       * Project coordinator - Technical management with internal and remote developers.
       * Technical Writing - Project scopes and timelines.
       * Front-End Development - HTML, CSS and JavaScript development for multiple target markets.
-  * Position: Media Developer (2006 - 2007)
+  * **Position: Media Developer** (2006 - 2007)
     * Responsibilities:
       * Front End Development - HTML, CSS and JavaScript development. Research and development of libraries and plugins.
       * Flash Production - ActionScript, asset and animations.
     * Key Projects:
       * iNDEMAND Networks
         * Role: Build and Maintenance of various iNDEMAND network websites and Intranets.
-      * anidea.com
+      * [ANidea.com](http://anidea.com)
         * Role: WordPress and Front-End Development
 * **Foreclosure.com** *(2005 - 2006)*
   * Position: Front-End Developer (2005 - 2006)
@@ -113,6 +112,7 @@ this.is.omartinez@gmail.com
 
 ## Skills
 <ul class="skills">
+  <li>Responsive Web Design</li>
   <li>HTML</li>
   <li>Jade</li>
   <li>JavaScript</li>
