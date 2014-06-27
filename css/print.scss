@@ -1,7 +1,8 @@
 @import "variables";
 @import "fonts/icomoon.scss";
 
-$base-size: 12pt;
+// base-size will control the size and vertical spacing
+$base-size: 10pt;
 
 @page {
     margin: .5cm;
@@ -16,7 +17,7 @@ $base-size: 12pt;
 
 body {
   font-family: $body-font;
-  font-size: 11pt;
+  font-size: $base-size;
 }
 
 img {
@@ -41,7 +42,7 @@ header {
   border-bottom: 2px solid $border-color;
 
   h1 {
-    font-size: 14pt;
+    font-size: $base-size+2;
     text-align: left;
     margin: 0;
     padding: 0;
@@ -49,8 +50,9 @@ header {
 
   p {
     margin: 0;
-    margin-bottom: 12pt;
+    margin-bottom: $base-size;
     padding: 0;
+    font-size: $base-size;
   }
 
   .resume--meta {
@@ -60,8 +62,14 @@ header {
 }
 
 h2 {
-  font-size: 15pt;
+  font-size: $base-size+2;
   margin: 4pt 0;
+  padding: 0;
+}
+
+h3 {
+ font-size: $base-size+1;
+  margin: 0;
   padding: 0;
 }
 
@@ -70,8 +78,8 @@ h2 {
 ul {
   list-style: none;
   padding: 0;
-  margin-left: 14pt;
-  margin-bottom: 18pt;
+  margin-left: 12pt;
+  margin-bottom: $base-size+2;
 
   li {
     margin-bottom: 0;
@@ -85,7 +93,7 @@ ul ul {
   margin-bottom: 0;
 
   li {
-    margin-bottom: 16pt;
+    margin-bottom: $base-size;
   }
 }
 
@@ -121,7 +129,7 @@ ul.skills {
   overflow: hidden;
   list-style: disc;
   padding-left: 12pt;
-  font-size: 10pt;
+  font-size: $base-size - 1;
 
   li {
     float: left;

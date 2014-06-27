@@ -51,7 +51,7 @@ this.is.omartinez@gmail.com
       * Worked with Project Managers on project timelines and milestones.
       * Helped bridge designers with developers to weave design and development.
       * Technical consulting - Technical recommendations to clients and internal developers
-  * Position: Senior Front-End Developer (2009 - 2011)
+  * **Position: Senior Front-End Developer** (2009 - 2011)
     * Responsibilities:
       * Front-End Development
       * Build, maintenance and content management using HTML, CSS and JavaScript.
@@ -78,7 +78,7 @@ this.is.omartinez@gmail.com
       * [ANidea.com](http://anidea.com)
         * Role: WordPress and Front-End Development
 * **Foreclosure.com** *(2005 - 2006)*
-  * Position: Front-End Developer (2005 - 2006)
+  * **Position: Front-End Developer** (2005 - 2006)
   * Responsibilities:
     * Designer - Designed websites for affiliates and marketing team.
     * Front-End Development - Created workflow to streamline affiliate site building. 500% improvement of development cycle.
@@ -108,7 +108,7 @@ this.is.omartinez@gmail.com
     * FWA Mobile Of The Day (January 4, 2012)
 
 ## Education
-* B.A of Science in Interactive Media Design - Art Institute of Fort Lauderdale (2001 - 2004)
+* ### B.A of Science in Interactive Media Design - Art Institute of Fort Lauderdale (2001 - 2004)
 
 ## Skills
 <ul class="skills">
