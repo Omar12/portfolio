@@ -14,13 +14,13 @@ Portfolio =
         $(".page-wrap").toggleClass "open-nav"
         return
       )
-    workWidth = $(".work--nav li").width()
-    $(".work--nav li").height(workWidth)
+    workWidth = $(".work--nav").find('li').width()
+    $(".work--nav").find('li').height(workWidth)
 
   landing: ->
 
     # hover effect
-    $("ul.showcase li").hover (->
+    $("ul.showcase").find('li').hover (->
       $(this).addClass "hovered"
       return
     ), ->

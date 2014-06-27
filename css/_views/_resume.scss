@@ -1,27 +1,92 @@
-// Images for each client
+// Resume
+// ============
 
-// loop that cycle clients
-// $clients is in _variables.scss
-@each $client in $clients {
-  .showcase {
-    .#{$client} {
-      background-image: url('/img/projects/#{$client}-01-thumb.jpg');
-    }
-  }
-
-  .project.#{$client} {
-    .project--hero {
-      background-image: url('/img/projects/#{$client}-01-full.jpg');
-    }
-  }
+.resume--meta {
+  display: none;
+  visibility: hidden;
 }
 
-// Custom Colors
+.resume {
 
-.showcase {
-  .laudi_vidni {
-    small, h3 {
-      color: $highlight-color;
+  .container {
+    font-size: 1rem;
+    width: 45rem;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    a {
+      color: #111;
+      text-decoration: none;
+      border-bottom: 1px dashed #aaa;
+    }
+
+    // The UL Madness
+    // Work Place
+    ul {
+      list-style: none;
+      margin-left: 1.25rem;
+      margin-bottom: 2rem;
+
+      li {
+        margin-bottom: 0;
+        padding: .125rem;
+      }
+
+    }
+
+    // Position
+    ul ul {
+      margin-bottom: 0;
+
+      li {
+        margin-bottom: 1.75rem;
+      }
+    }
+
+    // Position Details
+    ul ul ul {
+      margin-bottom: 0;
+
+      li {
+        margin-bottom: 0;
+      }
+    }
+
+    // Responsibilities
+    ul ul ul ul{
+      margin-bottom: 0;
+
+      li {
+        margin-bottom: 0;
+      }
+    }
+
+    // Responsibilities Details
+    ul ul ul ul ul {
+      list-style: disc;
+      margin-bottom: 0;
+
+      li {
+        margin-bottom: 0;
+      }
+    }
+
+    ul.skills {
+      overflow: hidden;
+      list-style: disc;
+      padding-left: 1rem;
+      font-size: .875rem;
+
+      li {
+        float: left;
+        width: 50%;
+        @include respond-to(medium-screens) {
+          width: 20%;
+        }
+      }
     }
   }
+
 }

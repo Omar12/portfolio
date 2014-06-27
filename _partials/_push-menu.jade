@@ -1,0 +1,25 @@
+nav.push--nav
+  div.nav--trigger
+    .nav--icon
+      - for (var x = 0; x < 3; x++)
+        span.line
+  ul.main--nav
+    li: a(href="/")
+      span.icon-home
+      span.text Home
+    li
+      ul.work--nav
+        for project in public._data
+          li(class="#{project.slug}"): a(href="/projects/#{project.slug}") &nbsp;
+    li: a(href="/resume/")
+      span.icon-file
+      span.text Resume
+    li: a(href="http://omar12.github.io/web-technologist-log/")
+      span.icon-embed
+      span.text Web Technologist Log
+
+  ul.social--links
+    li: a(href="https://twitter.com/omar12" class="twitter"): span.icon-twitter
+    li: a(href="https://github.com/omar12" class="github"): span.icon-github
+    li: a(href="http://www.linkedin.com/in/omartinez12"  class="linkedin"): span.icon-linkedin
+    li: a(href="https://pinboard.in/u:omartinez"  class="pinboard"): span.icon-pushpin

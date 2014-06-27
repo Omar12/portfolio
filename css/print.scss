@@ -1,3 +1,8 @@
+@import "variables";
+@import "fonts/icomoon.scss";
+
+$base-size: 12pt;
+
 @page {
     margin: .5cm;
 }
@@ -10,7 +15,8 @@
 }
 
 body {
-    @extend %proxima-nova-light;
+  font-family: $body-font;
+  font-size: 11pt;
 }
 
 img {
@@ -20,4 +26,105 @@ img {
 
 a {
     text-decoration: none;
+}
+
+
+// Brand Specific Styles
+// -------------
+
+// hide the things!
+.push--nav {
+  display: none !important;
+}
+
+header {
+  border-bottom: 2px solid $border-color;
+
+  h1 {
+    font-size: 14pt;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 12pt;
+    padding: 0;
+  }
+
+  .resume--meta {
+    display: block;
+    visibility: visible;
+  }
+}
+
+h2 {
+  font-size: 15pt;
+  margin: 4pt 0;
+  padding: 0;
+}
+
+// The UL Madness
+// Work Place
+ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 14pt;
+  margin-bottom: 18pt;
+
+  li {
+    margin-bottom: 0;
+    padding: 2pt;
+  }
+
+}
+
+// Position
+ul ul {
+  margin-bottom: 0;
+
+  li {
+    margin-bottom: 16pt;
+  }
+}
+
+// Position Details
+ul ul ul {
+  margin-bottom: 0;
+
+  li {
+    margin-bottom: 0;
+  }
+}
+
+// Responsibilities
+ul ul ul ul{
+  margin-bottom: 0;
+
+  li {
+    margin-bottom: 0;
+  }
+}
+
+// Responsibilities Details
+ul ul ul ul ul {
+  list-style: disc;
+  margin-bottom: 0;
+
+  li {
+    margin-bottom: 0;
+  }
+}
+
+ul.skills {
+  overflow: hidden;
+  list-style: disc;
+  padding-left: 12pt;
+  font-size: 10pt;
+
+  li {
+    float: left;
+    width: 25%;
+  }
 }

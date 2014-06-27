@@ -1,0 +1,34 @@
+doctype
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+
+    title The Resume of Omar Martinez
+    link(rel="stylesheet" href="/css/fonts/font.css")
+    link(rel="stylesheet" href="/css/styles.css" media="screen")
+    link(rel="stylesheet" href="/css/print.css" media="print")
+
+  body.preload(class="resume")
+    != partial('../_partials/_push-menu')
+
+    .page-wrap
+      header
+        h1 Omar Martinez
+        p.resume--meta
+          span.icon-location
+          | &nbsp; Austin, TX <br />
+          span.icon-envelope
+          | &nbsp; this.is.omartinez@gmail.com <br />
+          span.icon-phone
+          | &nbsp; 954.336.3265 <br />
+          span.icon-twitter
+          | &nbsp; @omar12 <br />
+          span.icon-home
+          | &nbsp; http://portfolio.om12.net <br />
+
+      .container
+        != yield
+
+    script(src='/bower_components/jquery/dist/jquery.min.js')
+    script(src='/scripts/main.js')

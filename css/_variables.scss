@@ -38,15 +38,17 @@ $heading-font: 'Brandon Grotesque', serif;
 // -------------
 
 // Media Query Sizes
+$break-small:  25rem;
 $break-medium: 40rem;
 $break-large:  64rem;
 
-// Widths
+// Dimensions
 $pull-nav-width: 14rem;
 $burger-size:    3.25rem;
 $burger-height:  1.375rem;
 $bun-width:      2rem;
-$bun-height:     .3125rem;
+$bun-height:     0.3125rem;
+$icon-size:      2.75rem;
 
 // Easings
 $easeOutCirc:   cubic-bezier(0.075, 0.82, 0.165, 1);

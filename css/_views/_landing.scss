@@ -1,9 +1,10 @@
 // Page Title
 
 header {
+  border-bottom: 2px solid $border-color;
+
   h1 {
     text-align: center;
-    border-bottom: 2px solid $border-color;
   }
 }
 
