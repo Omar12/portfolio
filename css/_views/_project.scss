@@ -59,7 +59,8 @@ a.project-link {
     @include transition(all 250ms $easeOutExpo 100ms);
   }
 
-  &:hover {
+  &:hover,
+  &:active {
     &:after {
       @include transform(translateY(0));
     }
@@ -106,7 +107,8 @@ a.project-link {
     @include transform(rotateX(0));
     @include transition(all, 1s, $easeOutCirc, 100ms);
 
-    &:hover {
+    &:hover,
+    &:active {
       @include transform(rotateX(-10deg));
     }
   }

@@ -77,25 +77,17 @@ this.is.omartinez@gmail.com
         * Role: Build and Maintenance of various iNDEMAND network websites and Intranets.
       * [ANidea.com](http://anidea.com)
         * Role: WordPress and Front-End Development
-* **Foreclosure.com** *(2005 - 2006)*
-  * **Position: Front-End Developer** (2005 - 2006)
-  * Responsibilities:
-    * Designer - Designed websites for affiliates and marketing team.
-    * Front-End Development - Created workflow to streamline affiliate site building. 500% improvement of development cycle.
-    * SEO - Optimized HTML and keywords.
-
-* **AgencyNet.com** *(2005 - 2004)*
-  * Position: Front-End Developer
+  * Position: Front-End Developer (2004 - 2006)
     * Responsibilities:
-    * Video & Sound Editing - Assistant Videographer, post production for video cocktail recipes for Bacardi.co.uk
-    * Front-End Development - HTML, CSS development
-  * Key Projects:
-    * AgencyNet.com
-      * Role: Flash and Media Developer
-    * Recognitions:
-      * FWA Site Of The Month (Feb 2005)
-    * BacardiDJ.com
-      * Role: Flash Development, Sound Design
+      * Video & Sound Editing - Assistant Videographer, post production for video cocktail recipes for Bacardi.co.uk
+      * Front-End Development - HTML, CSS development
+    * Key Projects:
+      * AgencyNet.com
+        * Role: Flash and Media Developer
+      * Recognitions:
+        * FWA Site Of The Month (Feb 2005)
+      * BacardiDJ.com, Bacardi.co.uk
+        * Role: Flash Development, Sound Design, Motion Graphics
 
 ## Side Projects
 

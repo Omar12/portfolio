@@ -54,7 +54,8 @@
       list-style: none;
       @extend %rollover-transition;
 
-      &:hover {
+      &:hover,
+      &:active {
         background: $pull-nav-hover;
       }
     }
@@ -72,6 +73,7 @@
         &.#{$client} {
           background: url('/img/projects/#{$client}-nav-preview.jpg') no-repeat;
           background-size: 100% 100%;
+          @include retina-images('/img/projects/2x/#{$client}-nav-preview.jpg');
         }
       }
     }
@@ -84,7 +86,8 @@
       opacity: 1;
       @extend %rollover-transition;
 
-      &:hover {
+      &:hover,
+      &:active {
         opacity: 0;
       }
     }
@@ -116,7 +119,8 @@
           @include transform(translateY(-50%));
         }
 
-        &:hover {
+        &:hover,
+        &:active {
           opacity: 1;
         }
 
