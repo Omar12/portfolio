@@ -16,7 +16,7 @@ $base-size: 10pt;
 }
 
 body {
-  font-family: $body-font;
+  @extend %adelle-sans-regular;
   font-size: $base-size;
 }
 

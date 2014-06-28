@@ -18,8 +18,7 @@
   background: $pull-nav-bg;
   color: $white;
   z-index: 1000;
-  font-family: $heading-font;
-  font-weight: 200;
+  @extend %brandon-thin;
   @include transform(translateX(-($pull-nav-width)));
   @extend %nav-transition;
 

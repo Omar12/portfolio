@@ -24,8 +24,7 @@
   a {
     color: #fff;
     text-decoration: none;
-    font-family: $heading-font;
-    font-weight: 200;
+    @extend %brandon-thin;
     font-size: 1.25rem;
     display: block;
     text-align: right;

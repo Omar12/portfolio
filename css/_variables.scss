@@ -29,8 +29,43 @@ $pull-nav-border: lighten($offblack, 25%);
 
 // Fonts
 // -------------
-$body-font:    'Adelle Sans', helvetica, arial, sans-serif;
-$heading-font: 'Brandon Grotesque', serif;
+$adelle-sans:    'Adelle Sans', helvetica, arial, sans-serif;
+$brandon-grotesque: 'Brandon Grotesque', helvetica, arial, sans-serif;
+
+%adelle-sans-regular {
+  font-family: $adelle-sans;
+  font-weight: 400;
+}
+
+%adelle-sans-bold {
+  font-family: $adelle-sans;
+  font-weight: 700;
+}
+
+%adelle-sans-light {
+  font-family: $adelle-sans;
+  font-weight: 200;
+}
+
+%brandon-regular {
+  font-family: $brandon-grotesque;
+  font-weight: 400;
+}
+
+%brandon-thin {
+  font-family: $brandon-grotesque;
+  font-weight: 200;
+}
+
+%brandon-medium {
+  font-family: $brandon-grotesque;
+  font-weight: 600;
+}
+
+%brandon-bold {
+  font-family: $brandon-grotesque;
+  font-weight: 700;
+}
 
 
 
