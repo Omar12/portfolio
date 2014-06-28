@@ -13,6 +13,9 @@ this.is.omartinez@gmail.com
   * Front-End Developer
     * Responsibilities
       * Front-End Architecture of projects
+    Projects
+      * [Laudi Vidni](http://shoplaudividni.com)
+      * Balloon Agency
 * **AgencyTEN (AgencyNET)** *(2006 - 2013)*
   * **Position: Lead Technologist** (2012 - 2013)
     * Responsibilities
@@ -77,7 +80,7 @@ this.is.omartinez@gmail.com
         * Role: Build and Maintenance of various iNDEMAND network websites and Intranets.
       * [ANidea.com](http://anidea.com)
         * Role: WordPress and Front-End Development
-  * Position: Front-End Developer (2004 - 2006)
+  * **Position: Front-End Developer** (2004 - 2006)
     * Responsibilities:
       * Video & Sound Editing - Assistant Videographer, post production for video cocktail recipes for Bacardi.co.uk
       * Front-End Development - HTML, CSS development

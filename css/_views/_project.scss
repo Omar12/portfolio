@@ -5,6 +5,8 @@
 .project--title {}
 
 .project {
+  margin-top: $burger-size+1;
+
   h2 {
     margin: 0.83rem 0;
   }
@@ -123,22 +125,12 @@ a.project-link {
   // homepage grid
   .showcase {
     .#{$client} {
-      background-image: url('/img/projects/#{$client}-01-thumb.jpg');
+      background-image: url('#{$img-projects}/#{$client}-01-thumb.jpg');
     }
   }
 
   // project page hero
   .project--hero.#{$client} {
-    background-image: url('/img/projects/#{$client}-01-full.jpg');
-  }
-}
-
-// Custom Colors
-
-.showcase {
-  .laudi_vidni {
-    small, h3 {
-      color: $highlight-color;
-    }
+    background-image: url('#{$img-projects}/#{$client}-01-full.jpg');
   }
 }

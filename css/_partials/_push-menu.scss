@@ -71,9 +71,9 @@
 
       @each $client in $clients {
         &.#{$client} {
-          background: url('/img/projects/#{$client}-nav-preview.jpg') no-repeat;
+          background: url('#{$img-projects}/#{$client}-nav-preview.jpg') no-repeat;
           background-size: 100% 100%;
-          @include retina-images('/img/projects/2x/#{$client}-nav-preview.jpg');
+          @include retina-images('#{$img-retina}/#{$client}-nav-preview.jpg');
         }
       }
     }
