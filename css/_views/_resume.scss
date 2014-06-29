@@ -6,12 +6,27 @@
   visibility: hidden;
 }
 
-.print--friendly--msg {
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: .875rem;
-  color: #777;
+a.print--friendly--msg {
+  display: none;
+
+  @include respond-to(medium-screens) {
+    display: inline-block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: .5rem;
+    background: $button-bg;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  @extend %top-slide-rollover;
+
+  span {
+    position: relative;
+    z-index: 1;
+  }
+
 }
 
 .resume {

@@ -1,0 +1,20 @@
+# Attributions
+================
+
+## Architecture
+* HarpJS - <http://harpjs.com/>
+
+## Libraries
+* jQuery - <http://jquery.com>
+* swipebox - <http://brutaldesign.github.com/swipebox>
+
+## Assets
+* Icons - IcoMoon - <http://icomoon.io/>
+
+## Components
+* Effeckt CSS - <http://h5bp.github.io/Effeckt.css/>
+* Animated Hamburger Icon - <http://codepen.io/stevenfabre/pen/LGvzk>
+
+## References
+And the many StackOverflow users and smart people of the web. My research
+was to leverage Jade, how to do loops in it as well as in SASS.

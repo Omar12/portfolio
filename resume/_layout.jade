@@ -14,7 +14,7 @@ html
 
     .page-wrap
       header
-        .site--logo
+        a(href="/"): .site--logo
         h1 Omar Martinez
         p.resume--meta
           span.icon-location
@@ -27,8 +27,9 @@ html
           | &nbsp; @omar12 <br />
           span.icon-home
           | &nbsp; http://portfolio.om12.net <br />
-        .print--friendly--msg
-          "Print Ready Page!"
+        a.print--friendly--msg(href="#" onclick="window.print()")
+          span.icon-print
+          span&nbsp;Print Page
 
       .container
         != yield

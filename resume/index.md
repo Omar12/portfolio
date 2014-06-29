@@ -13,7 +13,7 @@ this.is.omartinez@gmail.com
   * Front-End Developer
     * Responsibilities
       * Front-End Architecture of projects
-    Projects
+    * Projects
       * [Laudi Vidni](http://shoplaudividni.com)
       * Balloon Agency
 * **AgencyTEN (AgencyNET)** *(2006 - 2013)*
@@ -103,7 +103,7 @@ this.is.omartinez@gmail.com
     * FWA Mobile Of The Day (January 4, 2012)
 
 ## Education
-* ### B.A of Science in Interactive Media Design - Art Institute of Fort Lauderdale (2001 - 2004)
+* B.A of Science in Interactive Media Design - Art Institute of Fort Lauderdale (2001 - 2004)
 
 ## Skills
 <ul class="skills">
