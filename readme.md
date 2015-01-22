@@ -1,8 +1,8 @@
 ## The Portfolio of Omar Martinez
 
-The portfolio runs on [HarpJS](http://harpjs.com).
+The portfolio is built using [HarpJS](http://harpjs.com).
 
-You will need NodeJS to install.
+You will need NodeJS to run.
 
 Run `npm install harp -g`.
 

@@ -1,6 +1,6 @@
 <!--
 Omar Martinez
-Seattoe, WA
+Seattle, WA
 this.is.omartinez@gmail.com
 954.336.3265
 -->
@@ -14,18 +14,30 @@ this.is.omartinez@gmail.com
     * Responsibilities
       * UI Framework Integration
       * UI Component Development
-    * Technologies
+      * ARIA Compliance
+    *Technologies
       * LESS
       * Inhouse Frameworks
 
 * **From Somebody Else** *(January 2014 - August 2014)*
-  * Front-End Developer
+  * **Position: Front-End Developer**
     * Responsibilities
       * Front-End Architecture of projects.
       * Cross-browser, cross-device testing.
     * Projects
-      * [Balloon Agency](http://balloonagency.com)
       * [Laudi Vidni](http://shoplaudividni.com)
+        * Technologies:
+          * LESS
+          * Mustache.js
+          * Browserify
+          * Laravel (PHP)
+          * Gulp
+      * Balloon Agency
+        * Technologies:
+          * LESS
+          * Laravel
+          * JavaScript
+          * Gulp
 * **AgencyTEN (AgencyNET)** *(2006 - 2013)*
   * **Position: Lead Technologist** (2012 - 2013)
     * Responsibilities
@@ -38,14 +50,27 @@ this.is.omartinez@gmail.com
         * Collaborated with team members, outlining technical limitations and expectations of projects.
         * Determined code architecture, Frameworks and documentation for developers and producers.
         * Delegated development to team members.
+        * Technologies:
+          * git
+          * JavaScript
+          * SASS
+          * Facebook API
+          * Twitter API
+          * Instagram API
     * Projects:
       * [KAEC CityQuest](http://www.cityquest.net/)
         * Roles:
           * Technical Consulting
           * Wordpress Development
+        * Technologies:
+          * WordPress
+          * SASS
       * AgencyTEN.com
         * Role:
           * Lead Developer
+        * Technologies
+          * SASS
+          * JavaScript
     * Publications:
       * .NET Magazine - Should We Get Rid Of Social Media Buttons?
   * **Position: Senior Tech Lead** (2011 - 2012)
@@ -67,7 +92,7 @@ this.is.omartinez@gmail.com
   * **Position: Senior Front-End Developer** (2009 - 2011)
     * Responsibilities:
       * Front-End Development
-      * Build, maintenance and content management using HTML, CSS and JavaScript.
+      * Build, maintenance and content management using HTML, CSS, JavaScript and jQuery (plugin development).
       * Convert Photoshop designs to HTML and CSS.
       * Cross browser QA testing.
     * Key Projects:
@@ -94,6 +119,7 @@ this.is.omartinez@gmail.com
     * Responsibilities:
       * Video & Sound Editing - Assistant Videographer, post production for video cocktail recipes for Bacardi.co.uk
       * Front-End Development - HTML, CSS development
+      * Flash Development - Animations
     * Key Projects:
       * AgencyNet.com
         * Role: Flash and Media Developer
@@ -107,7 +133,7 @@ this.is.omartinez@gmail.com
 * [**imga.me**](http://imga.me) *(2012)*
   * Role:
     * Consulting - Helped conceptualize the goals of the project based on the understanding of the demographic.
-    * Front-End Development - Built the web component of the iOS App
+    * Front-End Development - JavaScript scroll event, CSS, HTML.
     * Sound Design
   * Recognitions
     * FWA Mobile Of The Day (January 4, 2012)
