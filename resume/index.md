@@ -9,15 +9,6 @@ this.is.omartinez@gmail.com
 
 ## Experience
 
-* **JP Morgan Chase** *(September 2014 - Present)*
-  * **Position: UI Application Developer**
-    * Responsibilities
-      * UI Framework Integration
-      * UI Component Development
-    * Technologies
-      * LESS
-      * Inhouse Frameworks
-
 * **From Somebody Else** *(January 2014 - August 2014)*
   * Front-End Developer
     * Responsibilities
